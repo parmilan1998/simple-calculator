@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  },
+  "name": "calculator",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "env":"tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Parmilan",
+  "license": "ISC",
+  "description": "Calculator"
+}
