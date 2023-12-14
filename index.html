@@ -11,111 +11,131 @@
       <!-- <h1 class="text-neutral-500 text-center text-xl font-popins">
         Calculator
       </h1> -->
-      <div class="bg-black py-3 px-3 rounded-md font-popins">
+      <div class="bg-neutral-800 py-3 px-3 rounded-md font-popins">
         <input
           type="text"
+          id="display"
           readonly
-          class="border border-neutral-300 py-3 rounded-lg my-3 w-[275px]"
+          class="border-0 py-4 rounded-lg my-3 mx-4 w-[275px] bg-neutral-600 text-white text-right"
         />
-        <div class="grid grid-cols-4 gap-2">
+        <div class="grid grid-cols-4 gap-2" id="keys">
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-yellow-500 text-white text-lg hover:bg-yellow-700 ease-in duration-300"
+            onClick="appendToDisplay('+')"
           >
             +
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('7')"
           >
             7
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('8')"
           >
             8
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('9')"
           >
             9
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-yellow-500 text-white text-lg hover:bg-yellow-700 ease-in duration-300"
+            onClick="appendToDisplay('-')"
           >
             -
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('4')"
           >
             4
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('5')"
           >
             5
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('6')"
           >
             6
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-yellow-500 text-white text-lg hover:bg-yellow-700 ease-in duration-300"
+            onClick="appendToDisplay('*')"
           >
             *
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('1')"
           >
             1
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('2')"
           >
             2
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('3')"
           >
             3
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-yellow-500 text-white text-lg hover:bg-yellow-700 ease-in duration-300"
+            onClick="appendToDisplay('/')"
           >
             /
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('.')"
           >
             .
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="appendToDisplay('0')"
           >
             0
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="clearDisplay()"
           >
             C
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-yellow-500 text-white text-lg hover:bg-yellow-700 ease-in duration-300"
+            onClick="appendToDisplay('%')"
           >
             %
           </button>
           <button
             class="px-4 py-4 w-[60px] h-[60px] flex justify-center items-center font-semibold rounded-full bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="calculateTotal()"
           >
             CE
           </button>
           <button
             class="col-span-2 px-4 py-4 w-[130px] h-[60px] flex justify-center items-center font-semibold rounded-lg bg-gray-500 text-white text-lg hover:bg-gray-700 ease-in duration-300"
+            onClick="calculateTotal()"
           >
             =
           </button>
         </div>
       </div>
     </div>
-    <script></script>
+    <script src="script.js"></script>
   </body>
 </html>
